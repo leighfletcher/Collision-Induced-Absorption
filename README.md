@@ -3,7 +3,9 @@ Updated collision-induced absorption for hydrogen-rich planetary atmospheres.
 
 Borysow's original fortran codes for many collisional pairs are available on [their website.](https://www.astro.ku.dk/~aborysow/programs/).
 
-The files below serve as Supplemental Information for Orton et al. (2024):
+The files below serve as Supplemental Information for Orton et al. (2024), and are available via:
+[![DOI](https://zenodo.org/badge/825714726.svg)](https://zenodo.org/doi/10.5281/zenodo.12687188)
+
 
 ## H2-H2
 * `H2H2_RT_0-2400cm.zip:` Original data for free-free rototranslational (RT) transitions from [Fletcher et al. (2018)](https://arxiv.org/abs/1712.02813) covering 0-2400 cm-1.
