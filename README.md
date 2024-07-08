@@ -16,7 +16,7 @@ The files below serve as Supplemental Information for Orton et al. (2024):
 
 * Note that dimer contributions are additionally needed following [Fletcher et al. (2018)](https://arxiv.org/abs/1712.02813).
 
-* `H2H2_RVfund_1000-11000cm.zip:` Rotovibrational (RV) fundamental for H2-H2 calculated in two parts (1000-6000 cm-1; 6000-11000 cm-1) using modified version of the code from [Borysow.](https://www.astro.ku.dk/~aborysow/programs/H2H2.lowT.0-1.new.for) - **H2H2.lowT.0-1MGfp.f**.  This code has been adjusted to have a variable para-H2 fraction.  Warnings about common blocks have been removed.  This can be compiled with `f95 -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f` or `ifort -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f`
+* `H2H2_RVfund_1000-11000cm.zip:` Rotovibrational (RV) fundamental for H2-H2 calculated in two parts (1000-6000 cm-1; 6000-11000 cm-1) using modified version of the code from [Borysow.](https://www.astro.ku.dk/~aborysow/programs/H2H2.lowT.0-1.new.for) - `H2H2.lowT.0-1MGfp.f`.  This code has been adjusted to have a variable para-H2 fraction.  Warnings about common blocks have been removed.  This can be compiled with `f95 -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f` or `ifort -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f`
 
 * NB. H2-H2 [1st](http://www.astro.ku.dk/~aborysow/programs/Zheng2.for) and [2nd](http://www.astro.ku.dk/~aborysow/programs/modelYi03.for) overtones must also be added at shorter wavelengths.
 
@@ -28,6 +28,10 @@ The files below serve as Supplemental Information for Orton et al. (2024):
 * `h2he_fundamental.dat:` Updated H2-He RV fundamental CIA from 2000-8000 cm-1.   
 
 * NB.  H2-He overtones and hot bands are then added following the original Borysow code [`H2He_all_trans.f`](https://www.astro.ku.dk/~aborysow/programs/h2he_all_trans.for).
+
+## NEMESIS Input Files
+
+Four versions of the NEMESIS input files for CIA are available - see the [NEMESIS repository](https://github.com/nemesiscode/radtrancode) for full details. These contain the CIA for all gas pairs (including H2-H2 and H2-He) on grids of temperature, pressure, and separated into 24 para-H2 fractions between 0.25 and 1.0.  These tables have a maximum of 1501 spectral points, so the different `dnu` flavours span 0-1500 cm-1, 0-3000 cm-1, 0-6000 cm-1 and 0-15,000 cm-1, respectively. 
 
 ## Notes:
 
