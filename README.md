@@ -1,7 +1,7 @@
 # Collision-Induced-Absorption
 Updated collision-induced absorption for hydrogen-rich planetary atmospheres.
 
-Borysow's original fortran codes for many collisional pairs are available on [their website.](https://www.astro.ku.dk/~aborysow/programs/).
+Borysow's original Fortran codes for many collisional pairs are available on [their website.](https://www.astro.ku.dk/~aborysow/programs/).
 
 The files below serve as Supplemental Information for Orton et al. (2024), and are available via:
 [![DOI](https://zenodo.org/badge/825714726.svg)](https://zenodo.org/doi/10.5281/zenodo.12687188)
@@ -16,11 +16,13 @@ The files below serve as Supplemental Information for Orton et al. (2024), and a
 
 * `h2h2_2500-4000.dat:`  Consolidated table for the H2-H2 collision-induced absorption from 2500-4000 cm-1, including the contribution from the H2-H2 rotovibrational fundamental.
 
-* Note that dimer contributions are additionally needed following [Fletcher et al. (2018)](https://arxiv.org/abs/1712.02813).
+
 
 * `H2H2_RVfund_1000-11000cm.zip:` Rotovibrational (RV) fundamental for H2-H2 calculated in two parts (1000-6000 cm-1; 6000-11000 cm-1) using modified version of the code from [Borysow.](https://www.astro.ku.dk/~aborysow/programs/H2H2.lowT.0-1.new.for) - `H2H2.lowT.0-1MGfp.f`.  This code has been adjusted to have a variable para-H2 fraction.  Warnings about common blocks have been removed.  This can be compiled with `f95 -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f` or `ifort -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f`
 
 * NB. H2-H2 [1st](http://www.astro.ku.dk/~aborysow/programs/Zheng2.for) and [2nd](http://www.astro.ku.dk/~aborysow/programs/modelYi03.for) overtones must also be added at shorter wavelengths.
+
+* Note that dimer contributions are additionally needed following [Fletcher et al. (2018)](https://arxiv.org/abs/1712.02813).
 
 ## H2-He
 * `H2He_RT_0-4000cm.zip:` Rototranslational (RT) H2-He collision induced absorption based on Orton et al. (2024).   
@@ -33,7 +35,7 @@ The files below serve as Supplemental Information for Orton et al. (2024), and a
 
 ## NEMESIS Input Files
 
-Four versions of the NEMESIS input files for CIA are available - see the [NEMESIS repository](https://github.com/nemesiscode/radtrancode) for full details. These contain the CIA for all gas pairs (including H2-H2 and H2-He) on grids of temperature, pressure, and separated into 24 para-H2 fractions between 0.25 and 1.0.  These tables have a maximum of 1501 spectral points, so the different `dnu` flavours span 0-1500 cm-1, 0-3000 cm-1, 0-6000 cm-1 and 0-15,000 cm-1, respectively. 
+Four versions of the NEMESIS input files `mgRT_mgRV_40-280K_dnu*.tab` for CIA are available - see the [NEMESIS repository](https://github.com/nemesiscode/radtrancode) for full details. These contain the CIA for all gas pairs (including H2-H2 and H2-He) on grids of temperature, pressure, and separated into 24 para-H2 fractions between 0.25 and 1.0.  These tables have a maximum of 1501 spectral points, so the different `dnu` flavours span 0-1500 cm-1, 0-3000 cm-1, 0-6000 cm-1 and 0-15,000 cm-1, respectively. 
 
 ## Notes:
 
