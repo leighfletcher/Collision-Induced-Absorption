@@ -3,8 +3,8 @@ Updated collision-induced absorption for hydrogen-rich planetary atmospheres.
 
 Borysow's original Fortran codes for many collisional pairs are available on [their website.](https://www.astro.ku.dk/~aborysow/programs/).
 
-The files below serve as Supplemental Information for Orton et al. (2024), and are available via:
-[![DOI](https://zenodo.org/badge/825714726.svg)](https://zenodo.org/doi/10.5281/zenodo.12687188)
+The files below serve as Supplemental Information for Orton et al. (2025), and are available via:
+[![DOI](https://zenodo.org/badge/825714726.svg)](https://zenodo.org/doi/10.5281/zenodo.12687188 )
 
 
 ## H2-H2
