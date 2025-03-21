@@ -16,8 +16,6 @@ The files below serve as Supplemental Information for Orton et al. (2025), and a
 
 * `h2h2_2500-4000.dat:`  Consolidated table for the H2-H2 collision-induced absorption from 2500-4000 cm-1, including the contribution from the H2-H2 rotovibrational fundamental.
 
-
-
 * `H2H2_RVfund_1000-11000cm.zip:` Rotovibrational (RV) fundamental for H2-H2 calculated in two parts (1000-6000 cm-1; 6000-11000 cm-1) using modified version of the code from [Borysow.](https://www.astro.ku.dk/~aborysow/programs/H2H2.lowT.0-1.new.for) - `H2H2.lowT.0-1MGfp.f`.  This code has been adjusted to have a variable para-H2 fraction.  Warnings about common blocks have been removed.  This can be compiled with `f95 -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f` or `ifort -o H2H2.lowT.0-1MGfp H2H2.lowT.0-1MGfp.f`
 
 * NB. H2-H2 [1st](http://www.astro.ku.dk/~aborysow/programs/Zheng2.for) and [2nd](http://www.astro.ku.dk/~aborysow/programs/modelYi03.for) overtones must also be added at shorter wavelengths.
@@ -35,7 +33,13 @@ The files below serve as Supplemental Information for Orton et al. (2025), and a
 
 ## NEMESIS Input Files
 
-Four versions of the NEMESIS input files `mgRT_mgRV_40-280K_dnu*.tab` for CIA are available - see the [NEMESIS repository](https://github.com/nemesiscode/radtrancode) for full details. These contain the CIA for all gas pairs (including H2-H2 and H2-He) on grids of temperature, pressure, and separated into 24 para-H2 fractions between 0.25 and 1.0.  These tables have a maximum of 1501 spectral points, so the different `dnu` flavours span 0-1500 cm-1, 0-3000 cm-1, 0-6000 cm-1 and 0-15,000 cm-1, respectively. 
+Multiple versions of the NEMESIS input files are available, with the following characteristics:
+* `mgRT_mgRV_40-280K_dnu*.tab` span 40 to 280K in steps of 10K, and are typically useful for simulations of Ice Giants (T<280 K).
+* `mgRT_mgRV_40-400K_dnu*.tab` span 40 to 400K in steps of 15K, and are typically useful for simulations of Gas Giants (T<400 K).
+* These tables have a maximum of 1501 spectral points, so the different `dnu` flavours span 0-1500 cm-1, 0-3000 cm-1, 0-6000 cm-1 and 0-15,000 cm-1, respectively. 
+* These contain the CIA for all gas pairs (including H2-H2 and H2-He) on grids of temperature, pressure, and separated into 24 para-H2 fractions between 0.25 and 1.0.
+  
+See the [NEMESIS repository](https://github.com/nemesiscode/radtrancode) for full details
 
 ## Notes:
 
